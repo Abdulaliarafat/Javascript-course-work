@@ -8,6 +8,7 @@ function evenSum1(numbers){
             evenArray.push(number)
         } 
       }
+    //   console.log(evenArray)
      let sum = 0;
       for(const numberEven of evenArray ){
           sum = sum + numberEven;
@@ -19,7 +20,7 @@ function evenSum1(numbers){
 }
 const number = [11,12,14,18,15,55,56,77,44,66,88]
 const avg = evenSum1(number)
-console.log('sum all even number: ',avg)
+console.log('sum all even number: ',avg.toFixed(2))
 
 // odd number sum 
 // first loop for saperate odd
