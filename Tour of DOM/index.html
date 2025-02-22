@@ -6,26 +6,79 @@
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="style/style.css"> 
     <style>
-        li{
+        .fruits-container li{
             color: tomato;
+        }
+        #fruits-title{
+            color: aqua;
+        }
+        .imortnent-pleces{
+            color: brown;
         }
     </style> 
 </head>
 <body>
     <header>
         <h1>Wellcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique beatae libero facere! Facilis perferendis dolorem ad blanditiis veritatis nostrum cumque vitae quo animi suscipit. Reprehenderit modi veritatis nostrum qui cumque?</p>
     </header>
     <main>
-        <h1>My awsome DOM</h1>
+        <section>
+            <h1>My awsome DOM</h1>
         <ul>
             <li>first</li>
             <li>second</li>
             <li>third</li>
         </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits i like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="Pleces-title">Pleces i like to visit</h1>
+            <ul>        
+                <li class="imortnent-pleces">sadapathor</li>
+                <li class="imortnent-pleces">jaflong</li>
+                <li class="imortnent-pleces">ratargul</li>
+                <li>saplabill</li>
+            </ul>
+        </section>
     </main>
     <script src="js/DOM.js"></script>
     <script>
-        console.log('inside the html file');    
-    </script>
+        // option -1 use fewer
+        const liCollection = document.getElementsByTagName('li')   
+        // console.log(liCollection)
+        for(const li of liCollection){
+            // console.log(li.innerText)
+        }
+        // option - 2 use much
+        const allHeading = document.getElementsByTagName('h1')
+        for(const h1 of allHeading){
+            // console.log(h1.innerText)
+        }
+        // option - 3 use lot of
+        const fruitsTitle = document.getElementById('fruits-title')
+        fruitsTitle.innerText = 'fruits change by js';
+        // console.log(fruitsTitle)
+        const places = document.getElementsByClassName('imortnent-pleces')
+        console.log(places)
+        // for(i = 0; i <allHeading.length; i++){
+        //     const heading = allHeading[i]
+        //     console.log(heading)
+        // }
+        // option - 4 quarey selector give one ......item
+         // option - 5 quarey selector all give node list..
+        const someLi = document.querySelectorAll('.fruits-container li')
+       for(const li of someLi){
+        console.log(li.innerText)
+       }
+       
+        </script>
 </body>
 </html>
