@@ -32,14 +32,14 @@
         </ul>
         </section>
         <section class="fruits-container">
-            <h1 id="fruits-title">Fruits i like</h1>
+            <h1 id="fruits-title" class="some bg-blue color rounded">Fruits i like</h1>
             <ul>
                 <li>Apple</li>
                 <li>Orange</li>
                 <li>Banana</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="large-text ">
             <h1 id="Pleces-title">Pleces i like to visit</h1>
             <ul>        
                 <li class="imortnent-pleces">sadapathor</li>
@@ -50,6 +50,7 @@
         </section>
     </main>
     <script src="js/DOM.js"></script>
+    <script src="js/style.js"></script>
     <script>
         // option -1 use fewer
         const liCollection = document.getElementsByTagName('li')   
@@ -67,7 +68,7 @@
         fruitsTitle.innerText = 'fruits change by js';
         // console.log(fruitsTitle)
         const places = document.getElementsByClassName('imortnent-pleces')
-        console.log(places)
+        // console.log(places)
         // for(i = 0; i <allHeading.length; i++){
         //     const heading = allHeading[i]
         //     console.log(heading)
@@ -76,7 +77,7 @@
          // option - 5 quarey selector all give node list..
         const someLi = document.querySelectorAll('.fruits-container li')
        for(const li of someLi){
-        console.log(li.innerText)
+        // console.log(li.innerText)
        }
        
         </script>
