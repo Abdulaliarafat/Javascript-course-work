@@ -17,11 +17,21 @@
      <button onclick="makeRed()">Make red</button>
      <button onclick="makeYellow()">Make yellow</button>
      <br>
-     <!--  -->
+     <!--get element by id set onclick..... option (3)..js  -->
      <button id="btn-make-blue">Make blue</button>
      <button id="btn-make-purple">Make purple</button>
+     <!-- option 4 addEvenListener -->
+      <button id="btn-Maka-green">Make green</button>
+      <button id="btn-make-gold">Make gold</button>
      <script>
-        
+        // document.getElementById('').addEvenLisener(event Type, hendler)
+        document.getElementById('btn-Maka-green').addEventListener('click',function makeGreen(){
+            document.body.style.backgroundColor = 'green';
+        })
+        // ......................
+        document.getElementById('btn-make-gold').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'gold';
+        })
      </script>
     <script src="js/events.js"></script>
 </body>
