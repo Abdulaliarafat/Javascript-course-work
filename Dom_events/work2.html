@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work2</title>
+</head>
+<body>
+    <h1>Input field</h1>
+    <h1 id="submit-done">Submit Done</h1>
+    <input id="input-submit" placeholder="write submition" type="text">
+    <button id="btn-submit" disabled> Submit </button>
+    <script>
+        document.getElementById('input-submit').addEventListener('keyup',function(event){
+           const text = event.target.value;
+           const btnSubmit = document.getElementById('btn-submit');
+           if(text === 'submit'){
+            console.log('recognize')
+           btnSubmit.removeAttribute('disabled')
+           const submitDone = document.getElementById('submit-done');
+           submitDone.style.display = 'none';
+           }
+           else{
+            console.log('Not recognize')
+            btnSubmit.setAttribute('disabled', true)
+           }
+        })
+
+    </script>
+</body>
+</html>
