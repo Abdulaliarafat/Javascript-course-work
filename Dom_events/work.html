@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work</title>
+    <style>
+        .comment{
+            border: 1px solid blue;
+            box-shadow: 2px 2px 5px 1px blue;
+            border-radius: 8px;
+            background-color: lightcyan;
+            margin: 10px;
+            padding: 10px;
+        }
+        textarea, button, h1, h3{
+            margin-left: 10px;
+        }
+    </style>        
+</head>
+<body>
+    <h1>Try to learning event heandler</h1>
+    <section>
+        <h3>SEE ALL COMMENT</h3>
+        <div id="comment-container">
+            <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, cumque, natus iure dolorum et obcaecati possimus odit commodi eveniet ab facilis!</p>
+            <p class="comment">Accusantium dolore dolor vero ut enim odio accusamus iusto alias. Amet temporibus excepturi possimus velit ipsam tempora porro officiis debitis consequatur?</p>
+            <p class="comment">Illum minima cumque inventore tempora. Molestiae ducimus at, non voluptatem asperiores qui ad beatae tempora, magnam assumenda quam facilis, corporis obcaecati?</p>
+        </div>
+        <textarea name="" id="input-field" cols="50" rows="6"></textarea>
+        <br>
+        <button id="btn-comment">Write comment</button>
+    </section> 
+    <script>
+        // step 1.
+         document.getElementById('btn-comment').addEventListener('click',function(){
+            // step 2.
+            const inputField = document.getElementById('input-field');
+            const newComment = inputField.value;
+            // step 3.
+            const commentContainer = document.getElementById('comment-container');
+            // step 4.
+            const commentElement = document.createElement('p')
+            commentElement.innerText = newComment;
+            commentElement.classList.add('comment');
+            // step 5.
+            commentContainer.appendChild(commentElement);
+            // step 6
+            inputField.value ='';
+         });
+    </script>   
+</body>
+</html>
