@@ -9,6 +9,7 @@ const arif ={
 //  console.log(...friends,age,status)
 
 // in array work distrcshsring like that..
-const person =['rohim','korim',{name:'ali'},'rahat']
-const [rohim,korim,object,rahat]=person
+
+const person1 =['rohim','korim',{name:'ali'},'rahat']
+const [rohim,korim,object,rahat]=person1
 // console.log(rohim,korim,object,rahat)
