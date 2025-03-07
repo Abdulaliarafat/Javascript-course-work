@@ -16,6 +16,6 @@
 // console.log(newNumber)
 const friends=['basar','rohim','kuddus']
 const newFriends = friends.map((element,index) =>{
-    console.log(index)
-    console.log(element)    
+    // console.log(index)
+    // console.log(element)    
 })
