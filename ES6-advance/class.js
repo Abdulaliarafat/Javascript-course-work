@@ -10,9 +10,9 @@ class product{
         console.log(`i am ${this.name} only details`)
     }
 }
-const other = new product('iphone',1234,'apple','steve jobs');
-console.log(other)
-other.details()
-const xiaomi= new product('redmi',1200,'xiaomi','no name')
-console.log(xiaomi)
-xiaomi.details()
+// const other = new product('iphone',1234,'apple','steve jobs');
+// console.log(other)
+// other.details()
+// const xiaomi= new product('redmi',1200,'xiaomi','no name')
+// console.log(xiaomi)
+// xiaomi.details()
