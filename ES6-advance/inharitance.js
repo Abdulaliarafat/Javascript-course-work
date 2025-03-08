@@ -16,7 +16,7 @@ class vahicle {
         console.log('feni to sylhet')
     }
  }
-const starLine = new bus('star-line',1000000,30)
-console.log(starLine)
-starLine.move()
-starLine.route()
+// const starLine = new bus('star-line',1000000,30)
+// console.log(starLine)
+// starLine.move()
+// starLine.route()
