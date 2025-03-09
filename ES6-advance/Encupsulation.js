@@ -13,5 +13,5 @@ class person{
         console.log(this.#status)
     }
 }
-const Rohim = new person('Rohim','20','single')
-Rohim.action()
+// const Rohim = new person('Rohim','20','single')
+// Rohim.action()
