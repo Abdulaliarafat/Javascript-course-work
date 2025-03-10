@@ -5,7 +5,7 @@ const person = {
     isMarrid:true
 }
 // this mathod we modify js object to json string....
-const newPerson=JSON.stringify(person);
-console.log(newPerson);
-const newPerson2=JSON.parse(newPerson)
-console.log(newPerson2)
+// const newPerson=JSON.stringify(person);
+// console.log(newPerson);
+// const newPerson2=JSON.parse(newPerson)
+// console.log(newPerson2)
